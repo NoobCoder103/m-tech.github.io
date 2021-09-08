@@ -14,24 +14,22 @@ body {
     left:20px;
 }
 .mid {
-    display:inline-block;
-}
-ul li{
-    /* display: inline-block; */
+    /* border: 2px solid blue; */
+    width:500px;
     position: relative;
-    left:300px;
-    top:-300px;
-    padding:60px;
-    float:left;
+    left:380px;
+    top:10px;
 }
-
-.mid nav ul li a {
+.mid ul li {
+    list-style: none;
+}
+.mid ul li a {
     text-decoration: none;
+    float:left;
+    padding:10px;
     color:white;
-    font-size:larger;
-    position: fixed;
-    padding: 10px;
-    margin: 20px;
+    margin: 10px;
+    font-weight:bolder;
 }
 .right {
     display: inline-block;
@@ -75,8 +73,8 @@ a:hover {
 .signupbox {
     display: inline-block;
     border:2px solid rgb(214, 16, 16);
-    position: relative;
-    right:-310px;
+    position: absolute;
+    right:10px;
     top:150px;
     height:450px;
     width:450px;
@@ -100,8 +98,8 @@ h2 {
     top:50px;
 }
 .lor {
-    position: relative;
-    top:200px;
+    position: absolute;
+    top:700px;
     color:white;
 }
 .text {
