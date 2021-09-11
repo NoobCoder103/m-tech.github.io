@@ -12,15 +12,15 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="left">
-        <img src="/Images/logo.jpg" alt="">
-    </div>
-    <div class="mid">
+     <div class="left">
+         <a href="https://www.mtech.tk/"><img src="/Images/logo.jpg" alt=""></a>
+    </div> 
+     <div class="mid">
         <nav>
             <ul>
                 <li><a href="">HOME</a></li>
                 <li><a href="">BLOG</a></li>
-                <li><a href="">CONTACT</a></li>
+                <li><a href="#contact">CONTACT US</a></li>
                 <li><a href="">ABOUT ME</a></li>
             </ul>
         </nav>
@@ -44,14 +44,54 @@
         </button>
         <button class="signup">
             Sign Up
-        </button>
-    </div>
-    <div class="lor">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, nobis illo neque suscipit aperiam culpa consectetur tempore, aliquid, dolore mollitia enim. Quae explicabo quod illo nihil voluptas expedita deserunt labore, eaque minus. Distinctio, neque!
+        </button> 
     </div>
     <div class="text">
         <h1>"We Meet <br>
              Technology"</h1>
+    </div> 
+
+    <div class="contact">
+        <h1>Contact Us</h1>
+        <form align="center" src="" method="POST">
+            <a name=contact></a>
+            <div>
+                <label for="name">Your Name ::</label>  
+                <input type="text" id="name" name="name" placeholder="Type Name">
+            </div>
+            <br>
+            <div>
+                <label for="email">Your Email :: &nbsp;</label>  
+                <input type="text" id="email" name="email" placeholder="Type Gmail">
+            </div>
+            <br>
+            <div>
+                <label for="subject">Subject :: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>  
+                <input type="text" id="subject" name="subject" placeholder="Type Message">
+            </div>
+            <br>
+            <div>
+                <label for="tel">Tel ::&nbsp;&nbsp;&nbsp;&nbsp;</label>&nbsp;
+                <select>
+                    <option>+94</option>
+                    <option>+95</option>
+                    <option>+96</option>
+                    <option>+97</option>
+                </select>
+                <input type="tel" id="tel" name="tel" placeholder="Type Mobile">
+            </div>
+            <br>
+            <div>
+                <label for="message">Message ::&nbsp;</label>
+                <br>
+                <textarea cols=30 rows=10>
+                </textarea>
+            </div>
+            <div>
+                <input type="submit" value="Submit" class="sub">
+                <input type="reset" value="Reset" class="sub">
+            </div>
+        </form>
     </div>
 </body>
 </html>
