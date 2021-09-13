@@ -3,6 +3,8 @@ body {
     margin:0px;
     background-image:url("https://images.hdqwalls.com/download/vector-design-retro-4k-fh-1600x900.jpg");
     background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
 }
 .left{
     display: inline-block;
