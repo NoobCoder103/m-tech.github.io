@@ -2,36 +2,38 @@ body {
     padding:0px;
     margin:0px;
     background-image:url("https://images.hdqwalls.com/download/vector-design-retro-4k-fh-1600x900.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
 }
 .left{
     display: inline-block;
 }
 .left img {
-    width:150px;
-    height:150px;
+    width:130px;
+    height:130px;
     position: fixed;
     top:20px;
     left:20px;
+    border-radius: 15px;
 }
 .mid {
-    display:inline-block;
-}
-ul li{
-    /* display: inline-block; */
+    width:500px;
     position: relative;
-    left:300px;
-    top:-300px;
-    padding:60px;
-    float:left;
+    left:380px;
+    top:10px;
 }
-
-.mid nav ul li a {
+.mid ul li {
+    list-style: none;
+}
+.mid ul li a {
     text-decoration: none;
+    float:left;
+    padding: 7px;
     color:white;
-    font-size:larger;
-    position: fixed;
-    padding: 10px;
-    margin: 20px;
+    margin: 5px;
+    font-weight:bolder;
+    font-size: 20px;
 }
 .right {
     display: inline-block;
@@ -59,7 +61,6 @@ ul li{
 a:hover {
     background-color: tomato;   
     border: 3px solid blue;
-    /* padding:5px; */
     border-radius: 18px;
 }
 .login:hover {
@@ -75,8 +76,8 @@ a:hover {
 .signupbox {
     display: inline-block;
     border:2px solid rgb(214, 16, 16);
-    position: relative;
-    right:-310px;
+    position: absolute;
+    right:10px;
     top:150px;
     height:450px;
     width:450px;
@@ -99,11 +100,6 @@ h2 {
     position:relative;
     top:50px;
 }
-.lor {
-    position: relative;
-    top:200px;
-    color:white;
-}
 .text {
     color:white;
     margin: auto;
@@ -112,4 +108,40 @@ h2 {
     position: absolute;
     left:50px;
     top:250px;
+}
+.contact {
+    position: absolute;
+    left:450px;
+    color:white;
+    font-weight: bolder;
+    top:800px;
+    padding:20px;
+    margin: 10px;
+    cursor:pointer;
+    display:block;
+}
+.contact input {
+    border: 3px solid red;
+    height:20px;
+}
+textarea {
+    border:3px solid red;
+}
+select {
+    border:3px solid red;
+    height:25px;
+}
+.contact h1 {
+    position: relative;
+    top:-20px;
+    color:white;
+    left:90px;
+    font-size: 50px;
+}
+.sub {
+    margin: 10px;
+    padding:20px;
+    width:100px;
+    height: 100px;
+    font-weight: bolder;
 }
