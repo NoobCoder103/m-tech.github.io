@@ -72,4 +72,9 @@ a:hover,a.active {
     #check:checked ~ ul {
         right:-20px;
     }
+    a:hover,a.active {
+        background: none;
+        color:brown;
+        transition: 0.5s;
+    }
 }
