@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif
+}
+body {
+    background-color: aquamarine;
+    width: 100%;
+    height: 100vh;
+}
+.nav-container {
+    width: 100%;
+    height: 120px;
+    background-color: brown;
+    display: inline-block;
+}
+.logo {
+    height: 150px;
+    line-height: 210px;
+}
+.logo img {
+    height: 70%;
+    clip-path: circle(50px);
+    cursor: pointer;
+}
+.nav-links {
+    float: right;
+    margin: -110px 20px;
+}
+.nav-links ul {
+    display: inline-block;
+}
+.nav-links ul li {
+    padding: 8px;
+    list-style: none;
+    display: inline-block;
+}
+.nav-links ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size:x-large;
+    font-weight: 600;
+}
+.bars {
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-top: -10px;
+}
+.bar {
+    width:40px;
+    height: 10px;
+    background-color: blue;
+    margin-top: 5px;
+}
+#button {
+    display: none;
+}
+.bars {
+    display: none;
+}
+.nav-links ul li a:hover {
+    color: black;
+}
+.slider {
+    width: 800px;
+    height: 460px;
+    margin: 20px auto;
+    overflow: hidden;
+    border: 6px dashed black;
+}
+.slide {
+    width: 3250px;
+    height: 460px;
+    display: inline-block;
+    animation: move 20s infinite;
+}
+.slider-image {
+    padding: 0;
+    margin: 0;
+}
+@keyframes move {
+    0% {
+        margin-left: 0;
+    }
+    25% {
+        margin-left: -100%;
+    }
+    50% {
+        margin-left: -200%;
+    }
+    75% {
+        margin-left: -300%;
+    }
+    100% {
+        margin-left: 0;
+    }
+}
+.portofolio {
+    width: 95%;
+    height: auto;
+    background-color: chartreuse;
+    animation: port 5s ease-in-out;
+    margin: 5px auto;
+    border-radius: 10px;
+    line-height: 2;
+}
+@keyframes port {
+    0% {
+        transform: translateX(-100%);
+    }
+}
+.about {
+    position: relative;
+    width: 68%;
+    height: 300px;
+    background-color: coral;
+    margin: 20px auto;
+    border-radius: 15px;
+    /* animation: about 5s ease-out; */
+}
+.about img {
+    width: 200px;
+    clip-path: circle(70px);
+}
+.about ul {
+    position: relative;
+    left:250px;
+    top:-150px;
+    font-size: larger;
+    font-weight: 700;
+}
+.about-not {
+    font-size: 1.5em;
+    font-weight: bold;
+    position: relative;
+    left: 210px;
+    top:-130px;
+}
+.about-not li {
+    background-color: aqua;
+    margin-top: 5px;
+    width: 60%;
+    border-radius: 5px;
+    list-style: none;
+    text-align: center;
+}
+.contact {
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+    text-align: center;
+    border: 5px solid red;
+    width: 500px;
+    height: 400px;
+    padding: 50px;
+    margin: 30px auto;
+    border-radius: 18px;
+}
+.contact h1 {
+    display: inline-block;
+    align-items: center;
+    margin: -43px;
+}
+.contact div {
+    padding: 3px;
+}
+.submit-form,.reset-form {
+    border: 2px solid blue;
+    background-color: blueviolet;
+    padding:2px;
+    border-radius: 3px;
+}
+.footer {
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    line-height: 3;
+    background-color: black;
+}
+.footer h4 {
+    float: left;
+    cursor: pointer;
+}
+.social{
+    position:absolute;
+    /* bottom: -953px; */
+    line-height: 50%;
+    left: 80%;
+    font-size: 25px;
+    color: #fff;
+}
+.social .fa-brands,.fa-solid {
+    padding: 8px;
+    color: #fff;
+}
+.social .fa-facebook:hover {
+    color: #3B5998;
+}
+.social .fa-twitter-square:hover {
+    color: #01ADED;
+}
+.social .fa-google-plus:hover {
+    color: red;
+}
+.social .fa-instagram-square:hover {
+    color: #C03585;
+}
+.social .fa-pinterest-square:hover {
+    color: #BC081D;
+}
+.social .fa-square-rss:hover {
+    color: #F36523;
+}
+@media screen and (max-width:1200px) {
+    .social {
+        width: 100%;
+        left: 85%;
+    }
+}
+@media screen and (max-width:700px) {
+    .bars {
+        display: block;
+    }
+    .nav-links ul {
+        text-align: center;
+        position: fixed;
+        top:120px;
+        width: 100%;
+        height: 100vh;
+        background-color: blue;
+        right:100%;
+        transition: 2s;
+    }
+    .nav-links ul li {
+        display: block;
+        margin: 50px auto;
+    }
+    #button:checked ~ ul {
+        right: 0%;
+    }
+    .slider {
+        width: 600px;
+    }
+    .slide {
+        width: 2000px;
+    }
+    .about ul {
+        font-size:15px;
+        width: 200px;
+        left: 200px;
+    }
+    .social {
+        left: 50%;
+    }
+    .about-not {
+        font-size: 1em;
+    }
+    .about-not li {
+        width: 40%;
+    }
+}
