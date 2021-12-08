@@ -130,3 +130,19 @@ button {
     color:rgb(15, 13, 160);
     font-size:20px;
 }
+#box1:hover {
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
+}
+#box2:hover {
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
+}
+#box3:hover {
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;  
+}
+#box4:hover {
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;  
+}

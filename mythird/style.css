@@ -37,9 +37,10 @@ a:hover,a.active {
 }
 .chkbtn {
     float:right;
-    line-height: 50px;
+    line-height: 60px;
     margin-right: 10px;
     display: none;
+    font-size:30px;
 }
 #check {
     display: none;
@@ -70,5 +71,10 @@ a:hover,a.active {
     }
     #check:checked ~ ul {
         right:-20px;
+    }
+    a:hover,a.active {
+        background: none;
+        color:brown;
+        transition: 0.5s;
     }
 }
